@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="helix.profitkey.hotelapp.Booking"
+    android:id="@+id/rel_layout">
+    <!--include layout="@layout/status_bar"/-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/status_bar"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/status_biscuit"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_nrml_18dp"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_7dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_page_title"
+                android:textColor="@color/black"
+                android:text="Booked : "
+                android:id="@+id/booked_date" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:background="@color/light_bg"
+                android:layout_marginBottom="@dimen/margin_7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="From : "
+                    android:id="@+id/booked_from" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="To : "
+                    android:id="@+id/booked_to" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:background="@color/light_bg"
+                android:layout_marginBottom="@dimen/text_small_10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="Days : "
+                    android:id="@+id/booked_days" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="Amount : "
+                    android:id="@+id/booked_amount" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:background="@color/light_bg"
+                android:layout_marginBottom="@dimen/margin_7dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:text="Category : "
+                android:id="@+id/booked_category" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:background="@color/light_bg"
+                android:layout_marginBottom="@dimen/margin_7dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:text="Offer Used : "
+                android:id="@+id/booked_offer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/margin_7dp"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:text="Description : "
+                android:id="@+id/booked_description" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/margin_20dp"
+                android:paddingRight="@dimen/margin_20dp"
+                android:background="@drawable/press_button_violet_circle"
+                android:textSize="@dimen/margin_20dp"
+                android:textColor="@color/white"
+                android:text="Done"
+                android:id="@+id/seen_booked_history" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+    </RelativeLayout>

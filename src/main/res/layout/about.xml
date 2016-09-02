@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="helix.profitkey.hotelapp.Booking"
+    android:id="@+id/rel_layout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/status_bar"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/status_biscuit"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:id="@+id/toolbar_title" />
+            <!--ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/_4sdp"
+                android:layout_gravity="end"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logop" /-->
+        </android.support.v7.widget.Toolbar>
+        <!--ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/teal"/-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_7dp"
+            android:layout_marginRight="@dimen/margin_7dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_7dp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="@string/about_text1"
+                    android:id="@+id/text1" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_normal"
+                    android:src="@drawable/forest"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_7dp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="@string/about_text2"
+                    android:id="@+id/text2" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_normal"
+                    android:src="@drawable/swim_pool"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_7dp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="@string/about_text3"
+                    android:id="@+id/text3" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_normal"
+                    android:src="@drawable/dine_hall"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_7dp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="@string/about_text4"
+                    android:id="@+id/text4" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_normal"
+                    android:src="@drawable/library"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_7dp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="@string/about_text5"
+                    android:id="@+id/text5" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_normal"
+                    android:src="@drawable/concierge_services"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_7dp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:text="@string/about_text6"
+                    android:id="@+id/text6" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

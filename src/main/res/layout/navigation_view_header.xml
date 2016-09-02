@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/status_biscuit_dark"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/avatar_nav_bar"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_20dp" />
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/logopk"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abish R"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:id="@+id/username"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignLeft="@+id/profile_image"
+        android:singleLine="true"/>
+<!--
+android:src="@drawable/lock"
+android:text="Abish R"
+android:text="abish.rethnaswamy@helixtech.co"
+android:layout_alignParentBottom="true"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abish.rethnaswamy@helixtech.co"
+        android:id="@+id/email"
+        android:gravity="left"
+        android:layout_marginBottom="@dimen/margin_7dp"
+        android:paddingRight="@dimen/_2sdp"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/white"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+</RelativeLayout>

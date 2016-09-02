@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <general.CustomTextview
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_35dp"
+        android:background="@drawable/one_line"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColor="@color/violet_statusbar">
+    </general.CustomTextview>
+
+</LinearLayout>

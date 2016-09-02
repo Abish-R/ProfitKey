@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <include layout="@layout/status_bar"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/status_biscuit"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_nrml_18dp"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/room_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:textSize="@dimen/text_page_title"
+        android:textColor="@color/black"
+        android:text="Title"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_20dp"
+        android:paddingRight="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:textSize="@dimen/text_nrml_18dp"
+        android:textColor="@color/black"
+        android:text="Price"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_7dp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/margin_7dp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/margin_35dp"
+            android:layout_marginRight="@dimen/margin_35dp"
+            android:background="@drawable/edittext_brown_line"
+            android:textColor="@color/font_brown"
+            android:focusable="false"
+            android:drawableRight="@drawable/cal"
+            android:hint="From date"
+            android:inputType="date"
+            android:id="@+id/from_date" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/cal"
+            android:hint="To date"
+            android:focusable="false"
+            android:paddingLeft="@dimen/margin_7dp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/margin_35dp"
+            android:layout_marginRight="@dimen/margin_35dp"
+            android:background="@drawable/edittext_brown_line"
+            android:textColor="@color/font_brown"
+            android:inputType="date"
+            android:id="@+id/to_date" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:textColor="@color/black"
+            android:text="Days : "
+            android:gravity="center"
+            android:id="@+id/total_days" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:textColor="@color/black"
+            android:text="Tax : Not Handled Yet"
+            android:gravity="center"
+            android:id="@+id/tax" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/confirm_booking_layout"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/press_button_rect_violet">
+        <TextView
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/inr"
+            android:paddingLeft="@dimen/_4sdp"
+            android:textSize="@dimen/text_normal"
+            android:text="0"
+            android:textColor="@color/white"
+            android:id="@+id/inr_text"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_7dp"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:text="Book Now"
+                android:textColor="@color/white"
+                android:id="@+id/confirm_booking"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_7dp"
+                android:textSize="@dimen/text_small_13dp"
+                android:text="(Pay Later)"
+                android:textColor="@color/white"
+                android:id="@+id/confirm_booking1"
+                android:gravity="center" />
+        </LinearLayout>
+        <View
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

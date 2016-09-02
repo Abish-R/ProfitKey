@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_orange"
+    tools:context="helix.profitkey.hotelapp.SignUp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical" >
+    <include layout="@layout/status_bar"/>
+    <LinearLayout
+        android:layout_weight=".2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+        <Button
+            android:visibility="invisible"
+            android:layout_weight=".3"
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/press_button_with_bg_back"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_weight="1.4"
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:src="@drawable/logopk" />
+        </LinearLayout>
+    <!--View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/margin_7dp"
+        android:background="@color/violet_statusbar"/-->
+
+        <TextView
+            android:id="@+id/sign_up_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:paddingBottom="@dimen/margin_7dp"
+            android:textSize="@dimen/text_page_title"
+            android:textStyle="bold"
+            android:textColor="@color/font_brown"
+            android:gravity="center"
+            android:text="Sign Up for a free Account" />
+    <!--ScrollView
+        android:layout_weight="1.7"
+        android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_marginLeft="@dimen/margin_20dp"
+	    android:layout_marginRight="@dimen/margin_20dp"
+	    android:layout_marginBottom="@dimen/margin_7dp"
+	    android:visibility="gone"-->
+	    <LinearLayout
+            android:id="@+id/first_layout"
+            android:layout_weight="1.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_7dp"
+            android:weightSum="7"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_7dp"
+                android:weightSum="2" >
+                <EditText
+                    android:id="@+id/f_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/text_normal"
+                    android:imeOptions="flagNoExtractUi"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="55"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="@color/font_brown"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:layout_marginRight="@dimen/margin_7dp"
+                    android:hint="First Name *"
+                    android:background="@drawable/edittext_brown_line" />
+                <EditText
+                    android:id="@+id/l_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/text_normal"
+                    android:imeOptions="flagNoExtractUi"
+                    android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:maxLength="55"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/margin_7dp"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="@color/font_brown"
+                    android:textSize="@dimen/text_nrml_18dp"
+                    android:layout_weight="1"
+                    android:inputType="textPersonName"
+                    android:hint="Last Name *"
+                    android:background="@drawable/edittext_brown_line" />
+            </LinearLayout>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/text_normal"
+                android:layout_marginRight="@dimen/text_normal"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="55"
+                android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM.1234567890_-@"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingBottom="@dimen/margin_7dp"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/font_brown"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email *   "
+                android:background="@drawable/edittext_brown_line" />
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/text_normal"
+                android:layout_marginRight="@dimen/text_normal"
+                android:imeOptions="flagNoExtractUi"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingBottom="@dimen/margin_7dp"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/font_brown"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:inputType="phone"
+                android:hint="Mobile *"
+                android:background="@drawable/edittext_brown_line" />
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/uname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/text_normal"
+                android:layout_marginRight="@dimen/text_normal"
+                android:imeOptions="flagNoExtractUi"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890._@"
+                android:maxLength="55"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingBottom="@dimen/margin_7dp"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/font_brown"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:inputType="textPersonName"
+                android:hint="Username *"
+                android:background="@drawable/edittext_brown_line" />
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/text_normal"
+                android:layout_marginRight="@dimen/text_normal"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="55"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingBottom="@dimen/margin_7dp"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/font_brown"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:inputType="textPassword"
+                android:hint="Password *"
+                android:background="@drawable/edittext_brown_line" />
+
+
+            <!--LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center"
+                android:orientation="horizontal" -->
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/margin_35dp"
+                    android:layout_marginRight="@dimen/margin_35dp"
+                    android:layout_marginTop="@dimen/margin_35dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:text="NEXT"
+                    android:background="@drawable/press_button" />
+            <!--/LinearLayout-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textColor="@color/font_brown" />
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Sign in!"
+                    android:textSize="21dp"
+                    android:textColor="@color/font_brown_dark"
+                    android:background="@drawable/press_button_with_bg_color"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="now!"
+                    android:textColor="@color/font_brown" />
+            </LinearLayout>
+        </LinearLayout>
+    <!--/ScrollView android:visibility="gone"-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/second_layout"
+        android:layout_weight="1.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_7dp"
+        android:weightSum="5.9"
+        android:orientation="vertical" >
+        <!--LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:weightSum="2" -->
+            <TextView
+                android:id="@+id/dob_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_normal"
+                android:layout_marginRight="@dimen/text_normal"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:text="DATE OF BIRTH"
+                android:textColor="@color/font_brown_dark"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/margin_35dp"
+            android:layout_marginRight="@dimen/text_normal"
+            android:focusable="false"
+            android:imeOptions="flagNoExtractUi"
+            android:drawableRight="@drawable/cal"
+            android:digits="0123456789-"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingBottom="@dimen/margin_7dp"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/text_nrml_18dp"
+            android:inputType="date"
+            android:hint="DOB"
+            android:background="@drawable/edittext_brown_line" />
+        <TextView
+            android:id="@+id/gndr_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_normal"
+            android:layout_marginRight="@dimen/text_normal"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:text="GENDER"
+            android:textColor="@color/font_brown_dark"/>
+        <RadioGroup
+            android:layout_weight="1"
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_35dp">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:checked="true"
+                android:button="@drawable/radio_button_check"
+                android:textColor="@color/font_brown"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_nrml_18dp"
+                android:button="@drawable/radio_button_check"
+                android:textColor="@color/font_brown"
+                android:text="Female"/>
+        </RadioGroup>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/text_normal"
+            android:layout_marginRight="@dimen/text_normal"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLength="30"
+            android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM "
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingBottom="@dimen/margin_7dp"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/text_nrml_18dp"
+            android:inputType="textPostalAddress"
+            android:hint="City"
+            android:background="@drawable/edittext_brown_line" />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/text_normal"
+            android:layout_marginRight="@dimen/text_normal"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLength="30"
+            android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM "
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingBottom="@dimen/margin_7dp"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/text_nrml_18dp"
+            android:inputType="textPostalAddress"
+            android:hint="Country"
+            android:background="@drawable/edittext_brown_line" />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/text_normal"
+            android:layout_marginRight="@dimen/text_normal"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLength="6"
+            android:digits="1234567890"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingBottom="@dimen/margin_7dp"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@color/font_brown"
+            android:textSize="@dimen/text_nrml_18dp"
+            android:inputType="number"
+            android:hint="Zipcode  "
+            android:background="@drawable/edittext_brown_line" />
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_35dp"
+            android:layout_marginRight="@dimen/margin_35dp"
+            android:layout_margin="@dimen/margin_35dp"
+            android:padding="@dimen/_4sdp"
+            android:text="Create Account"
+            android:textSize="21dp"
+            android:textColor="@color/white"
+            android:background="@drawable/press_button"/>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

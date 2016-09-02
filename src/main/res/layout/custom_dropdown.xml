@@ -1,0 +1,15 @@
+<general.CustomTextview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_35dp"
+    android:background="@drawable/one_line"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/margin_20dp"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:textSize="18sp"
+    android:textColor="@color/font_spinner"
+    android:textAlignment="inherit">
+</general.CustomTextview>

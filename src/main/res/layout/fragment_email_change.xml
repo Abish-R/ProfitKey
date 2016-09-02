@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_100dp"
+    android:layout_marginLeft="@dimen/margin_20dp"
+    android:layout_marginRight="@dimen/margin_20dp"
+    tools:context="fragments.PasswordResetFragment">
+    <EditText
+        android:id="@+id/old_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_7dp"
+        android:hint="Old Email"
+        android:background="@drawable/edittext_brown_line"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:inputType="textEmailAddress"
+        android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM.1234567890_-@"
+        android:textColor="@color/font_brown"
+        android:textSize="@dimen/text_nrml_18dp"/>
+    <EditText
+        android:id="@+id/new_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_7dp"
+        android:hint="New Email"
+        android:background="@drawable/edittext_brown_line"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:inputType="textEmailAddress"
+        android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM.1234567890_-@"
+        android:textColor="@color/font_brown"
+        android:textSize="@dimen/text_nrml_18dp"/>
+    <EditText
+        android:id="@+id/cnfm_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_7dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:hint="Confirm Email"
+        android:background="@drawable/edittext_brown_line"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:inputType="textEmailAddress"
+        android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM.1234567890_-@"
+        android:textColor="@color/font_brown"
+        android:textSize="@dimen/text_nrml_18dp"/>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/press_button_violet_circle"
+        android:textColor="@color/white"
+        android:text="Ok"/>
+
+</LinearLayout>
+

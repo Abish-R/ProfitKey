@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">ProfitKey</string>
+
+
+    <string name="hotel_name">HERITAGE</string>
+    <string name="offers">OFFERS</string>
+    <string name="rooms">ROOMS</string>
+    <string name="reviews">REVIEWS</string>
+    <string name="booked_history">PAST VISITS</string>
+    <string name="room_details">ROOM DETAILS</string>
+    <string name="new_booking">NEW BOOKING</string>
+    <string name="booking_history">PAST VISITS</string>
+    <string name="review">REVIEW</string>
+    <string name="write_review">WRITE REVIEW</string>
+    <string name="review_detail">DETAIL REVIEW</string>
+    <string name="edit_review">EDIT REVIEW</string>
+    <string name="settings">SETTINGS</string>
+    <string name="action_settings">Settings</string>
+    <string name="password_change">PASSWORD CHANGE</string>
+    <string name="email_change">EMAIL CHANGE</string>
+    <string name="mobile_change">MOBILE CHANGE</string>
+    <string name="prof_pic_change">PROFILE CHANGE</string>
+    <string name="about">ABOUT</string>
+    <string name="help">HELP</string>
+    <string name="about_text1">Staying with us at the Highland Heritage is akin to having your best
+        friend take care of you; pampering you, if you will, for the ultimate ‘home away
+        from home’ experience. Unlike the telephone based impersonal request system of a starred hotel,
+        at the Highland Heritage we encourage our guests to help themselves, while always being right
+        behind to assist you in making your holiday experience a memorable one. Our in-house Villa
+        manager Chahnaz Gayraud is always next door for any assistance you may require
+    </string>
+    <string name="about_text2">The meticulously tended landscaped gardens in the front, and the 10,000 square meter
+    natural forest behind the Villas, Amor and Sonha are open to guests looking for a
+    spot of solitude and seclusion.
+    </string>
+    <string name="about_text3">Each of the two villas is equipped with an
+        infinity pool overlooking the serene greenery of the forest. Bask on a lawn chair
+        by the waters while sipping a cocktail, or take a relaxing swim to clear your mind.
+    </string>
+    <string name="about_text4">Our well-appointed meeting room comfortably seats twelve people, and can be fitted with
+        audio-visual equipment on request.
+    </string>
+    <string name="about_text5">We have a well equipped library cum study for that
+        rare moment if work catches up with you. One can also choose from our wide selection of books,
+        publications, newspapers, and magazines.
+    </string>
+    <string name="about_text6">If you’re looking to plan a tour, experience the sights
+        and sounds, hire a car, or just explore, we will help you find exactly what you’re looking for.
+    </string>
+
+    <string name="one">ONE</string>
+    <string name="eight">EIGHT</string>
+    <string name="five">FIVE</string>
+    <string name="four">FOUR</string>
+    <string name="nine">NINE</string>
+    <string name="seven">SEVEN</string>
+    <string name="six">SIX</string>
+    <string name="ten">TEN</string>
+    <string name="three">THREE</string>
+    <string name="two">TWO</string>
+    <string name="title_activity_scrollable_tabs">Scrollable Tabs</string>
+    <string name="title_activity_simple_tabs">Simple Tabs</string>
+    <string name="btn_simple_tabs">Simple Tabs</string>
+    <string name="btn_scrollable_tabs">Scrollable Tabs</string>
+    <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
+    <string name="btn_icon_tabs">Only Icon Tabs</string>
+    <string name="btn_pinned_top_tabs">Pinned To Top Tabs</string>
+    <string name="title_activity_icon_text_tabs">Icon and Text Tabs</string>
+    <string name="title_activity_icon_tabs">Icon Tabs</string>
+    <string name="btn_custom_icon_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>

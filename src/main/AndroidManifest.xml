@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="helix.profitkey.hotelapp"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="general.ApplicationConfigs"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".SignUp"/>
+        <activity android:name=".SimpleTabsActivity"/>
+        <activity android:name=".Booking"/>
+        <activity android:name=".BookingHistoryDescription"/>
+        <activity android:name=".ReviewDescription"/>
+        <activity android:name=".ReviewWriteNew"/>
+        <activity android:name=".About"/>
+        <activity android:name=".Settings"/>
+        <activity android:name=".Help"/>
+        <activity android:name=".BookingConfirm"/>
+        <!--activity android:name=".AvailableRoomDescription"/-->
+        <!-- Widget -->
+        <receiver android:name="widget.UILWidgetProvider" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

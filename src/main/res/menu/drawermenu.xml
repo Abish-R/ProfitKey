@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--item android:title=""/>
+    <item android:title="General"
+        android:id="@+id/nav_item_general"
+        android:icon="@drawable/tyre"/-->
+
+    <item android:title="Offers"
+        android:id="@+id/menuItem1"
+        android:icon="@drawable/offers"/>
+
+    <item android:title="Available Rooms"
+        android:id="@+id/menuItem2"
+        android:icon="@drawable/room_available"/>
+
+    <item android:title="PAST VISITS"
+        android:id="@+id/menuItem3"
+        android:icon="@drawable/history"/>
+
+
+    <item android:title="Review">
+        <menu>
+            <item
+                android:title="All Reviews"
+                android:id="@+id/menuItem4"
+                android:icon="@drawable/review"/>
+            <item
+                android:title="Write Review"
+                android:id="@+id/menuItem5"
+                android:icon="@drawable/write_review"/>
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="Settings"
+            android:id="@+id/menuItem6"
+            android:icon="@drawable/settings"/>
+        <item android:title="About"
+            android:id="@+id/menuItem7"
+            android:icon="@drawable/about"/>
+        <item android:title="Help"
+            android:id="@+id/menuItem8"
+            android:icon="@drawable/help"/>
+        <item android:title="LogOut"
+            android:id="@+id/menuItem9"
+            android:icon="@drawable/sign_out"/>
+    </group>
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/password_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:textColor="@color/violet_statusbar"
+        android:background="@drawable/press_button"
+        android:text="Password Change"/>
+    <Button
+        android:id="@+id/mobile_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:textColor="@color/violet_statusbar"
+        android:background="@drawable/press_button"
+        android:text="Mobile Change"/>
+    <Button
+        android:id="@+id/email_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:textColor="@color/violet_statusbar"
+        android:background="@drawable/press_button"
+        android:text="Email Change"/>
+    <Button
+        android:id="@+id/prof_img_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/violet_statusbar"
+        android:background="@drawable/press_button"
+        android:text="Profile Pic Change"/>
+
+</LinearLayout>

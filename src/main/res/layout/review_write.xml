@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="helix.profitkey.hotelapp.Booking"
+    android:id="@+id/rel_layout">
+    <!--include layout="@layout/status_bar"/-->
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <include layout="@layout/status_bar"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/status_biscuit"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_nrml_18dp"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/font_brown_dark"
+                android:text="Abish"
+                android:id="@+id/review_name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColor="@color/font_brown"
+                android:hint="Title"
+                android:id="@+id/review_title_enter"
+                android:background="@drawable/edittext_brown_line"
+                android:maxLength="155"
+                android:singleLine="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:layout_marginBottom="@dimen/margin_7dp"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColor="@color/font_brown"
+                android:hint="Description"
+                android:id="@+id/review_description_enter"
+                android:background="@drawable/edittext_brown_line"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLength="1000"
+                android:minLines="1"
+                android:maxLines="4"/>
+
+            <!--TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 images added"
+                android:id="@+id/review_images_added"
+                android:layout_gravity="center_horizontal" /-->
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/review_image_captured"
+                android:src="@drawable/home"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_20dp"
+                android:paddingRight="@dimen/margin_20dp"
+                android:background="@drawable/press_button_violet_light_circle_shaped"
+                android:text="Capture"
+                android:textColor="@color/white"
+                android:id="@+id/review_add_image" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_60dp"
+                android:paddingRight="@dimen/margin_60dp"
+                android:layout_margin="@dimen/margin_20dp"
+                android:background="@drawable/press_button_violet_circle"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_20dp"
+                android:text="Submit"
+                android:id="@+id/review_ok_enter" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    </RelativeLayout>
